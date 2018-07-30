@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StaticSceneViewController.swift
 //  Scene Kit Kitchen
 //
 //  Created by Kathleen Chung on 2018-07-29.
@@ -9,7 +9,7 @@
 import UIKit
 import SceneKit
 
-class ViewController: UIViewController {
+class StaticSceneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
