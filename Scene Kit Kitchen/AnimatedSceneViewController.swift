@@ -26,6 +26,12 @@ class AnimatedSceneViewController: UIViewController {
         sceneView.scene = SCNScene()
         view.addSubview(sceneView)
 
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.numberOfTapsRequired = 1
+        tapRecognizer.numberOfTouchesRequired = 1
+        tapRecognizer.addTarget(self, action: #selector(sceneTapped))
+        sceneView.gestureRecognizers = [tapRecognizer]
+
         let groundGeometry = SCNFloor()
         groundGeometry.reflectivity = 0
         let groundMaterial = SCNMaterial()
@@ -82,20 +88,13 @@ class AnimatedSceneViewController: UIViewController {
         sceneView.scene?.rootNode.addChildNode(sphere2)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func sceneTapped(recognizer: UITapGestureRecognizer) {
+        let location = recognizer.location(in: sceneView)
+
+        let hitResults = sceneView.hitTest(location, options: nil)
+        if let result = hitResults.first {
+            let node = result.node
+            node.removeFromParentNode()
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
