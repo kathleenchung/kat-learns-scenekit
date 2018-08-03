@@ -14,6 +14,7 @@
 		14724630210EABE100189CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1472462E210EABE100189CA6 /* LaunchScreen.storyboard */; };
 		1472463B210EABE200189CA6 /* Scene_Kit_KitchenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472463A210EABE200189CA6 /* Scene_Kit_KitchenTests.swift */; };
 		14724646210EABE200189CA6 /* Scene_Kit_KitchenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14724645210EABE200189CA6 /* Scene_Kit_KitchenUITests.swift */; };
+		14758A28210F5C5D009F1A05 /* AnimatedSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14758A27210F5C5D009F1A05 /* AnimatedSceneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		14724641210EABE200189CA6 /* Scene Kit KitchenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scene Kit KitchenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14724645210EABE200189CA6 /* Scene_Kit_KitchenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene_Kit_KitchenUITests.swift; sourceTree = "<group>"; };
 		14724647210EABE200189CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14758A27210F5C5D009F1A05 /* AnimatedSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSceneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				14724625210EABE000189CA6 /* AppDelegate.swift */,
 				14724627210EABE000189CA6 /* StaticSceneViewController.swift */,
+				14758A27210F5C5D009F1A05 /* AnimatedSceneViewController.swift */,
 				14724629210EABE000189CA6 /* Main.storyboard */,
 				1472462C210EABE100189CA6 /* Assets.xcassets */,
 				1472462E210EABE100189CA6 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14758A28210F5C5D009F1A05 /* AnimatedSceneViewController.swift in Sources */,
 				14724628210EABE000189CA6 /* StaticSceneViewController.swift in Sources */,
 				14724626210EABE000189CA6 /* AppDelegate.swift in Sources */,
 			);
